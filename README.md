@@ -6,7 +6,7 @@
 
 ## Instalação
 
-A IDE de JavaScript adotada foi o [VS Code][vs].
+A IDE escolhida foi o [VS Code][vs].
 
 Instale no Mac, Linux ou Windows seguindo as instruções da documentação do [Cypress.io][cyDOC] e do [cypress-cucumber-preprocessor][cucumber]:
 
