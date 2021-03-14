@@ -1,7 +1,6 @@
 import SelecaoCidadeLocator from '../locators/SelecaoCidadeLocator'
 const selecaoCidadeLocator = new SelecaoCidadeLocator
 const url = Cypress.config("baseUrl")
-const cidade = 'Limeira'
 
 class SelecaoCidadePage {
     // Acessa o site que será testado
@@ -10,7 +9,7 @@ class SelecaoCidadePage {
     }
       
     // Clica no campo para inserir a string da cidade
-    clicarCampoCidade(){
+    clicarCampoCidade(cidade){
         cy.get(selecaoCidadeLocator.campoCidade()).shadow().find('acn-form-input').shadow().find('input').type(cidade);
 
     }
@@ -26,8 +25,8 @@ class SelecaoCidadePage {
     }
 
     //Verificar se contém a string com a cidade escolhida corretamente
-    mensagemCidadeAtual() {
-        cy.get(selecaoCidadeLocator.cidadeAtual()).should('contain', 'Limeira - SP')
+    mensagemCidadeAtual(resultado) {
+        cy.get(selecaoCidadeLocator.cidadeAtual()).should('contain', resultado)
     }
     
 }
