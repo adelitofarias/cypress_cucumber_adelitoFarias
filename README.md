@@ -1,9 +1,6 @@
 # Projeto de automação Web adotando o framework Cypress com Cucumber
 > Esse é um exemplo de como montar uma estrutura inicial de teste automáticos web com o auxílio do [Cypress.io][cy] e do [cypress-cucumber-preprocessor][cucumber] que dá suporte para usar Cucumber com com o Cypress.
 
-https://user-images.githubusercontent.com/19351435/111055669-35871b00-8457-11eb-89e2-52e61c838867.mp4
-
-
 
 ## Instalação
 
