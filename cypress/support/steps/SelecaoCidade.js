@@ -6,8 +6,8 @@ Given("que acesse o site da BRK ambiental", () => {
     selecaoCidadePage.acessarSite();
 })
 
-And("preencher no campo Informe a Cidade a cidade de Limeira", () => {
-    selecaoCidadePage.clicarCampoCidade();
+And("preencher no campo Informe a Cidade a cidade de {string}", (cidade) => {
+    selecaoCidadePage.clicarCampoCidade(cidade);
 })
 
 When("selecionar a cidade na lista", () => {
@@ -18,6 +18,6 @@ And("acionar a escolha clicando em Esta é a cidade da minha conta", () => {
     selecaoCidadePage.clicarBotaoSalvarCidade();
 })
 
-Then("validar a mensagem da cidade VOCÊ ESTÁ NA CIDADE DE LIMEIRA", () => {
-    selecaoCidadePage.mensagemCidadeAtual();
+Then("validar a mensagem da cidade VOCÊ ESTÁ NA CIDADE {string}", (resultado) => {
+    selecaoCidadePage.mensagemCidadeAtual(resultado);
 })
