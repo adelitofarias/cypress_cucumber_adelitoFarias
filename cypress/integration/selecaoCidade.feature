@@ -1,5 +1,8 @@
 Feature: Atendimento por Cidade
 
+    Como usuario, desejo informar minha cidade
+    Para conferir os serviços da minha região
+
     Scenario: Localizar cidade de Limeira
         Given que acesse o site da BRK ambiental
         And preencher no campo Informe a Cidade a cidade de "Limeira"
