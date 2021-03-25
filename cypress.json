@@ -1,11 +1,10 @@
 {
-    "viewportWidth": 1024,
-    "viewportHeight": 768,
-    
-    "baseUrl": "https://minhabrk.com.br/selecao-de-cidade",
+  "viewportWidth": 1024,
+  "viewportHeight": 768,
+  "baseUrl": "https://minhabrk.com.br/selecao-de-cidade",
+  "testFiles": "**/*.{feature,features}",
+  "video": false,
 
-    "testFiles": "**/*.{feature,features}",
-
-    "video": false
   
+  "projectId": "3c79oe"
 }
