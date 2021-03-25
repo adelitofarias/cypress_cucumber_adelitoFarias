@@ -7,7 +7,8 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "cy:chrome": "cypress run -b chrome",
-    "cy:runTest": "cypress run --browser chrome --no-exit"
+    "cy:runTest": "cypress run --browser chrome --no-exit",
+    "cy:runDash": "cypress run --record --key faff1efe-bbeb-4655-8dd8-e01541bc65e5"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"
@@ -21,6 +22,7 @@
   "author": "Adelito Farias",
   "license": "MIT",
   "dependencies": {},
+  
   "devDependencies": {
     "cypress": "^6.6.0",
     "cypress-cucumber-preprocessor": "^4.0.1"
